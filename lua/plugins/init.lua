@@ -17,6 +17,12 @@ return {
   -- 	},
   -- },
   --
+  -- fix right when Codeium is enabled and nvim-cmp https://github.com/Exafunction/codeium.vim/pull/387
+  -- vim.g.codeium_disable_bindings = 1
+  -- {
+  --   'Exafunction/codeium.vim',
+  --   event = 'BufEnter'
+  -- },
   {
   "nvim-treesitter/nvim-treesitter",
   	opts = {

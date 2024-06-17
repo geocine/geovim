@@ -1,6 +1,12 @@
 require "nvchad.options"
 
--- add yours here!
+local opt = vim.o
 
--- local o = vim.o
--- o.cursorlineopt ='both' -- to enable cursorline!
+-- Set the font for Neovide
+opt.guifont = "FiraCode Nerd Font Mono:h14"
+
+-- Set git bash as default terminal
+if vim.fn.has('win32') == 1 then
+  opt.shell = "C:\\Program Files\\Git\\bin\\bash.exe"
+  opt.shellcmdflag = "-s"
+end
